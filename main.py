@@ -1,6 +1,6 @@
 def quiz():
     score = 0
-    total_questions = 6 #pag magdadagdag kayo ng question, magplus 1 kayo here
+    total_questions = 8 #pag magdadagdag kayo ng question, magplus 1 kayo here
 
     # Question 1
     print("(Precious) What is the primary purpose of a compiler?")
@@ -92,6 +92,37 @@ def quiz():
         score += 1
     else:
         print(f"{answer.upper()} is incorrect. The correct answer is A.")
+
+
+# Question 7 
+    print("\n(Althea) What is my Favorite Color?")
+    print("a) blue")
+    print("b) rainbow")
+    print("c) red")
+    print("d) none of the above")
+
+    answer = input("Enter your answer: ").strip().lower()
+    if answer == 'd':
+        print("Correct!")
+        score += 1
+    else:
+        print(f"{answer.upper()} is incorrect. The correct answer is D.")
+
+# Question 8
+    print("\n(Althea) Your love is like a __________?")
+    print("a) sun")
+    print("b) shine")
+    print("c) red")
+    print("d) I don't know")
+
+    answer = input("Enter your answer: ").strip().lower()
+    if answer == 'a':
+        print("Correct!")
+        score += 1
+    else:
+        print(f"{answer.upper()} is incorrect. The correct answer is A.")
+
+
 
     # Display Final Score
     print(f"\nCongratulations! You got {score} out of {total_questions} items.")
