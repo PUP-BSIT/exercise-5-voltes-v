@@ -1,6 +1,6 @@
 def quiz():
     score = 0
-    total_questions = 4 #pag magdadagdag kayo ng question, magplus 1 kayo here
+    total_questions = 6 #pag magdadagdag kayo ng question, magplus 1 kayo here
 
     # Question 1
     print("(Precious) What is the primary purpose of a compiler?")
@@ -64,6 +64,34 @@ def quiz():
     else:
         print(f"{answer.upper()} is incorrect. The correct answer is B.")
 
+     # Question 5
+    print("\n(JC) What will be the output of the following code?")
+    print("age = '25'\nnew_age = int(age) + 5\nprint(new_age)")
+    print("a) 25")
+    print("b) '30'")
+    print("c) 30")
+    print("d) TypeError")
+
+    answer = input("Enter your answer: ").strip().lower()
+    if answer == 'c':
+        print("Correct!")
+        score += 1
+    else:
+        print(f"{answer.upper()} is incorrect. The correct answer is C.")
+
+    # Question 6 
+    print("\n(JC) Which logical operator returns True if at least one of the conditions is True?")
+    print("a) or")
+    print("b) and")
+    print("c) not")
+    print("d) xor")
+
+    answer = input("Enter your answer: ").strip().lower()
+    if answer == 'a':
+        print("Correct!")
+        score += 1
+    else:
+        print(f"{answer.upper()} is incorrect. The correct answer is A.")
 
     # Display Final Score
     print(f"\nCongratulations! You got {score} out of {total_questions} items.")
