@@ -62,7 +62,7 @@ def quiz():
         score += 1
 
     else:
-        print(f"{answer.upper()} is incorrect. The correct answer is *correct answer*.")
+        print(f"{answer.upper()} is incorrect. The correct answer is B.")
 
 
     # Display Final Score
