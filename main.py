@@ -1,6 +1,6 @@
 def quiz():
     score = 0
-    total_questions = 2 #pag magdadagdag kayo ng question, magplus 1 kayo here
+    total_questions = 4 #pag magdadagdag kayo ng question, magplus 1 kayo here
 
     # Question 1
     print("(Precious) What is the primary purpose of a compiler?")
@@ -33,17 +33,34 @@ def quiz():
         print(f"{answer.upper()} is incorrect. The correct answer is B.")
 
     # Question 3
-    print("\n(Name) Your Question")
-    print("a) ")
-    print("b) ")
-    print("c) ")
-    print("d) ")
+    print("\n(Dyanna) TRIVIA! What is my favorite color?")
+    print("a) Blue")
+    print("b) Red")
+    print("c) Green")
+    print("d) Purple")
 
     answer = input("Enter your answer: ").strip().lower()
 
-    if answer == '*correct answer*':
+    if answer == 'd':
         print("Correct!")
         score += 1
+    else:
+        print(f"{answer.upper()} is incorrect. The correct answer is D.")
+
+    # Question 4
+    print("\n(Dyanna) Fill in the blank for the song 'Oceans and Engines' by NIKI:")
+    print('"Heaven _______ Destiny\'s _______"')
+    print("a) Granted, Guide")
+    print("b) Denied, Decried")
+    print("c) Blessed, Tide")
+    print("d) Lost, Light")
+
+    answer = input("Enter your answer: ").strip().lower()
+
+    if answer == 'b':
+        print("Correct!")
+        score += 1
+
     else:
         print(f"{answer.upper()} is incorrect. The correct answer is *correct answer*.")
 
